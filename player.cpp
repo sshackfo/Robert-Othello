@@ -39,5 +39,10 @@ Move *Player::doMove(Move *opponentsMove, int msLeft) {
      * TODO: Implement how moves your AI should play here. You should first
      * process the opponent's opponents move before calculating your own move
      */ 
+     int mstaken = 0; 
+     if(mstaken > 30 * 1000) // if it has been 30s already, play current best move
+     {
+        // play current best move
+     }
     return NULL;
 }
