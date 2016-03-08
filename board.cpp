@@ -1,5 +1,6 @@
 #include "board.h"
 
+
 /*
  * Make a standard 8x8 othello board and initialize it to the standard setup.
  */
@@ -27,6 +28,7 @@ Board *Board::copy() {
     newBoard->taken = taken;
     return newBoard;
 }
+
 
 bool Board::occupied(int x, int y) {
     return taken[x + 8*y];

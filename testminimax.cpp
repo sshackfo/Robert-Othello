@@ -19,6 +19,8 @@ int main(int argc, char *argv[]) {
         ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', 
         ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '
     };
+
+
     Board *board = new Board();
     board->setBoard(boardData);
 
@@ -31,6 +33,7 @@ int main(int argc, char *argv[]) {
      * TODO: Write code to set your player's internal board state to the 
      * example state.
      */
+     player->setBoard(board);
 
     // Get player's move and check if it's right.
     Move *move = player->doMove(NULL, 0);
